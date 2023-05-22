@@ -5,34 +5,53 @@ import Titulo from "./componentes/Titulo"
 // import Primeiro from './componentes/Primeiro'
 // import Of, {Comp1,Comp2} from './componentes/MultiplosComponentes'
 // import MinMax from "./componentes/MinMax"
-import Aleatorio from "./componentes/Aleatorio"
+// import Aleatorio from "./componentes/Aleatorio"
 // import Titulo from "./componentes/Titulo"
 // import Botao from "./componentes/Botao"
 // import Contador from "./componentes/Contador"
 // import AtDiaDaSemana from "./componentes/AtDiaDaSemana"
 // import Pai from "./componentes/direta/Pai"
 // import Pai from "./componentes/indireta/Pai"
-import ContadorV2 from "./componentes/contador/ContadorV2"
-import {NavigationContainer} from '@react-navigation/native'
+// import ContadorV2 from "./componentes/contador/ContadorV2"
+// import {NavigationContainer} from '@react-navigation/native'
 import {createNativeStackNavigator} from '@react-navigation/native-stack'
+import Familia from "./componentes/relacao/Familia"
 // import HomeScreen from "./componentes/HomeScreen"
 // import DetailsScreen from "./componentes/DetailsScreen"
-import AtividadeScreen from "./componentes/Atividade"
-import AtividadeScreen2 from "./componentes/Atividade2"
+// import AtividadeScreen from "./componentes/Atividade"
+// import AtividadeScreen2 from "./componentes/Atividade2"
+import Membro from "./componentes/relacao/Membro"
+import { SafeAreaView } from "react-native-safe-area-context"
 
 
 const Stack = createNativeStackNavigator()
 
 export default () => (
+    <SafeAreaView style={styles.TelaIniciante}>
+        <Familia>
+         <Membro nome="Jorge" sobrenome="Pereiras"/>
+    <Membro nome="Edinaldo" sobrenome="Pereiras"/>
+    <Membro nome="Marcinho" sobrenome="Pereiras"/>
+    <Membro nome="Roberta" sobrenome="Pereiras"/>
+    </Familia>
+    <Familia>
+   </Familia>
+      <Familia>
+      <Membro nome="Lucas" sobrenome="Da Silva"/>
+      <Membro nome="Fernando" sobrenome="Da Silva"/>
+      <Membro nome="Jorge" sobrenome="Da Silva"/>
+      <Membro nome="Marcia" sobrenome="Da Silva"/>
+     </Familia>
+     </SafeAreaView>
 
-    <NavigationContainer>
-    <Stack.Navigator>
-        <Stack.Screen name="Atividade" component={AtividadeScreen}/>
-        <Stack.Screen name="Atividade2" component={AtividadeScreen2}/>
-        <Stack.Screen name="Aleatorio" component={Aleatorio}/>
-        <Stack.Screen name="ContadorV2" component={ContadorV2}/>
-    </Stack.Navigator>
-</NavigationContainer>
+//     <NavigationContainer>
+//     <Stack.Navigator>
+//         <Stack.Screen name="Atividade" component={AtividadeScreen}/>
+//         <Stack.Screen name="Atividade2" component={AtividadeScreen2}/>
+//         <Stack.Screen name="Aleatorio" component={Aleatorio}/>
+//         <Stack.Screen name="ContadorV2" component={ContadorV2}/>
+//     </Stack.Navigator>
+// </NavigationContainer>
 
 )
     // <View style={styles.TelaIniciante}>
@@ -68,14 +87,14 @@ export default () => (
 
 //     // export default App
 
-//     const styles = StyleSheet.create({
-//         TelaIniciante: {
-//             flexGrow: 1,
-//             justifyContent: "center",
-//             alignItems: 'center',
-//             padding: 20 
-//         }
-//     })
+    const styles = StyleSheet.create({
+        TelaIniciante: {
+            flexGrow: 1,
+            justifyContent: "center",
+            alignItems: 'center',
+            padding: 20 
+        }
+    })
 
 
 // function App(){
