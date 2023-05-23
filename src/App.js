@@ -13,36 +13,40 @@ import Titulo from "./componentes/Titulo"
 // import Pai from "./componentes/direta/Pai"
 // import Pai from "./componentes/indireta/Pai"
 // import ContadorV2 from "./componentes/contador/ContadorV2"
-// import {NavigationContainer} from '@react-navigation/native'
+import {NavigationContainer} from '@react-navigation/native'
 import {createNativeStackNavigator} from '@react-navigation/native-stack'
-import Familia from "./componentes/relacao/Familia"
+// import Familia from "./componentes/relacao/Familia"
+import ListaProdutos from "./componentes/produto/ListaProdutos"
 // import HomeScreen from "./componentes/HomeScreen"
 // import DetailsScreen from "./componentes/DetailsScreen"
 // import AtividadeScreen from "./componentes/Atividade"
 // import AtividadeScreen2 from "./componentes/Atividade2"
-import Membro from "./componentes/relacao/Membro"
+// import Membro from "./componentes/relacao/Membro"
 import { SafeAreaView } from "react-native-safe-area-context"
+import ListaProdutoV2 from "./componentes/produto/ListaProdutoV2"
 
 
 const Stack = createNativeStackNavigator()
 
 export default () => (
     <SafeAreaView style={styles.TelaIniciante}>
-        <Familia>
-         <Membro nome="Jorge" sobrenome="Pereiras"/>
-    <Membro nome="Edinaldo" sobrenome="Pereiras"/>
-    <Membro nome="Marcinho" sobrenome="Pereiras"/>
-    <Membro nome="Roberta" sobrenome="Pereiras"/>
-    </Familia>
-    <Familia>
-   </Familia>
-      <Familia>
-      <Membro nome="Lucas" sobrenome="Da Silva"/>
-      <Membro nome="Fernando" sobrenome="Da Silva"/>
-      <Membro nome="Jorge" sobrenome="Da Silva"/>
-      <Membro nome="Marcia" sobrenome="Da Silva"/>
-     </Familia>
-     </SafeAreaView>
+       <ListaProdutoV2/>
+       {/* <ListaProdutos/> */}
+{/* //         <Familia>
+//          <Membro nome="Jorge" sobrenome="Pereiras"/>
+//     <Membro nome="Edinaldo" sobrenome="Pereiras"/>
+//     <Membro nome="Marcinho" sobrenome="Pereiras"/>
+//     <Membro nome="Roberta" sobrenome="Pereiras"/>
+//     </Familia>
+//     <Familia>
+//    </Familia>
+//       <Familia>
+//       <Membro nome="Lucas" sobrenome="Da Silva"/>
+//       <Membro nome="Fernando" sobrenome="Da Silva"/>
+//       <Membro nome="Jorge" sobrenome="Da Silva"/>
+//       <Membro nome="Marcia" sobrenome="Da Silva"/>
+//      </Familia> */}
+        </SafeAreaView>
 
 //     <NavigationContainer>
 //     <Stack.Navigator>
