@@ -23,14 +23,24 @@ import ListaProdutos from "./componentes/produto/ListaProdutos"
 // import AtividadeScreen2 from "./componentes/Atividade2"
 // import Membro from "./componentes/relacao/Membro"
 import { SafeAreaView } from "react-native-safe-area-context"
-import ListaProdutoV2 from "./componentes/produto/ListaProdutoV2"
+// import ListaProdutoV2 from "./componentes/produto/ListaProdutoV2"
+import Quadrado from "./componentes/layout/Quadrado"
+import FlexboxV1 from "./componentes/layout/FlexboxV1"
+import FlexboxV2 from "./componentes/layout/FlexboxV2"
+import FlexboxV3 from "./componentes/layout/FlexboxV3"
 
 
 const Stack = createNativeStackNavigator()
 
 export default () => (
     <SafeAreaView style={styles.TelaIniciante}>
-       <ListaProdutoV2/>
+     <FlexboxV3/>
+        {/* <Quadrado cor='#1E90FF'/>
+        <Quadrado cor='#FF0000'/>
+        <Quadrado cor='#00FF00'/>
+        <Quadrado cor='#FF1493'/>
+        <Quadrado cor='#9B30FF'/> */}
+       {/* <ListaProdutoV2/> */}
        {/* <ListaProdutos/> */}
 {/* //         <Familia>
 //          <Membro nome="Jorge" sobrenome="Pereiras"/>
