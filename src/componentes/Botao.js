@@ -6,6 +6,18 @@ export default props => {
         console.warn("Esta executando!!!")
     }
     return(
+    
+        <>
+    <Text style={Estilo.txtGrande}>Series/Catalago:</Text>
+    <Text style={Estilo.txtGrande}>Final da lista</Text>
+    
+      <Text></Text>
+      <Text></Text>
+    </>
+    )
+    }
+
+    return(
         <>
         <Button
         title="Botao numero 1"
@@ -25,4 +37,3 @@ export default props => {
            </>
 
     )
-}

@@ -1,12 +1,11 @@
 import React from "react"
 import {Text, View, StyleSheet} from 'react-native'
-import Titulo from "./componentes/Titulo"
+// import Titulo from "./componentes/Titulo"
 // import Contador from "./componentes/Contador"
 // import Primeiro from './componentes/Primeiro'
 // import Of, {Comp1,Comp2} from './componentes/MultiplosComponentes'
 // import MinMax from "./componentes/MinMax"
 // import Aleatorio from "./componentes/Aleatorio"
-// import Titulo from "./componentes/Titulo"
 // import Botao from "./componentes/Botao"
 // import Contador from "./componentes/Contador"
 // import AtDiaDaSemana from "./componentes/AtDiaDaSemana"
@@ -28,13 +27,20 @@ import Quadrado from "./componentes/layout/Quadrado"
 import FlexboxV1 from "./componentes/layout/FlexboxV1"
 import FlexboxV2 from "./componentes/layout/FlexboxV2"
 import FlexboxV3 from "./componentes/layout/FlexboxV3"
-
+import FlexboxV4 from "./componentes/layout/FlexboxV4"
+import Mega from "./componentes/mega/Mega"
+import AtividadeFilme from "./componentes/filme/AtividadeFilme"
 
 const Stack = createNativeStackNavigator()
 
 export default () => (
     <SafeAreaView style={styles.TelaIniciante}>
-     <FlexboxV3/>
+        <AtividadeFilme/>
+
+    
+     
+             {/* <Mega qtdeNumeros={7}/> */}
+     {/* <FlexboxV3/> */}
         {/* <Quadrado cor='#1E90FF'/>
         <Quadrado cor='#FF0000'/>
         <Quadrado cor='#00FF00'/>
@@ -127,3 +133,18 @@ export default () => (
 // export default () => {
 //     return <Text>Component 4</Text>
 // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
