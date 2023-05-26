@@ -23,32 +23,42 @@ import ListaProdutos from "./componentes/produto/ListaProdutos"
 // import Membro from "./componentes/relacao/Membro"
 import { SafeAreaView } from "react-native-safe-area-context"
 // import ListaProdutoV2 from "./componentes/produto/ListaProdutoV2"
-import Quadrado from "./componentes/layout/Quadrado"
-import FlexboxV1 from "./componentes/layout/FlexboxV1"
-import FlexboxV2 from "./componentes/layout/FlexboxV2"
-import FlexboxV3 from "./componentes/layout/FlexboxV3"
-import FlexboxV4 from "./componentes/layout/FlexboxV4"
-import Mega from "./componentes/mega/Mega"
-import AtividadeFilme from "./componentes/filme/AtividadeFilme"
+// import Quadrado from "./componentes/layout/Quadrado"
+// import FlexboxV1 from "./componentes/layout/FlexboxV1"
+// import FlexboxV2 from "./componentes/layout/FlexboxV2"
+// import FlexboxV3 from "./componentes/layout/FlexboxV3"
+// import FlexboxV4 from "./componentes/layout/FlexboxV4"
+// import Mega from "./componentes/mega/Mega"
+import Filme from "./componentes/filme/Filme"
+import FilmeScreen from "./componentes/filme/FilmeScreen"
+import Serie from "./componentes/filme/Serie"
+import SerieScreen from "./componentes/filme/SerieScreen"
+import HomeScreen from "./componentes/filme/HomeScreen"
+
 
 const Stack = createNativeStackNavigator()
 
 export default () => (
-    <SafeAreaView style={styles.TelaIniciante}>
-        <AtividadeFilme/>
+    <NavigationContainer>
+            <Stack.Navigator>
+                <Stack.Screen name="Home" component={HomeScreen}/>
+                <Stack.Screen name="Filme" component={FilmeScreen}/>
+                <Stack.Screen name="Serie" component={SerieScreen}/>
+             </Stack.Navigator>
+         </NavigationContainer>
+        
 
     
      
-             {/* <Mega qtdeNumeros={7}/> */}
-     {/* <FlexboxV3/> */}
-        {/* <Quadrado cor='#1E90FF'/>
-        <Quadrado cor='#FF0000'/>
-        <Quadrado cor='#00FF00'/>
-        <Quadrado cor='#FF1493'/>
-        <Quadrado cor='#9B30FF'/> */}
-       {/* <ListaProdutoV2/> */}
-       {/* <ListaProdutos/> */}
-{/* //         <Familia>
+    //          {/* <Mega qtdeNumeros={7}/> */}
+    //  {/* <FlexboxV3/> */}
+    //     {/* <Quadrado cor='#1E90FF'/>
+    //     <Quadrado cor='#FF0000'/>
+    //     <Quadrado cor='#00FF00'/>
+    //     <Quadrado cor='#FF1493'/>
+    //     <Quadrado cor='#9B30FF'/> */}
+    //    {/* <ListaProdutoV2/> */}
+    //    {/* <ListaProdutos/> */}{/* //         <Familia>
 //          <Membro nome="Jorge" sobrenome="Pereiras"/>
 //     <Membro nome="Edinaldo" sobrenome="Pereiras"/>
 //     <Membro nome="Marcinho" sobrenome="Pereiras"/>
@@ -62,7 +72,7 @@ export default () => (
 //       <Membro nome="Jorge" sobrenome="Da Silva"/>
 //       <Membro nome="Marcia" sobrenome="Da Silva"/>
 //      </Familia> */}
-        </SafeAreaView>
+        // </SafeAreaView>
 
 //     <NavigationContainer>
 //     <Stack.Navigator>
